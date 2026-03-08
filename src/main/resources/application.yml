@@ -1,0 +1,48 @@
+spring:
+  application:
+    name: billing-collections-service
+
+  datasource:
+    url: jdbc:h2:mem:billingdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+
+  sql:
+    init:
+      mode: always
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui/index.html
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: always
+  info:
+    env:
+      enabled: true
+
+info:
+  app:
+    name: Billing Collections Service
+    description: Microservice for policy billing, retries, and delinquency tracking
+    version: 1.0
