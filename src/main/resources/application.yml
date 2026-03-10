@@ -17,6 +17,7 @@ spring:
     hibernate:
       ddl-auto: none
     show-sql: true
+    
 
   sql:
     init:
@@ -28,6 +29,16 @@ springdoc:
 
 server:
   port: 8080
+
+logging:
+  file:
+    name: logs/billing-collections-service.log
+  level:
+    root: INFO
+    com.example.billingcollections: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} [%X{requestId}] - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} [%X{requestId}] - %msg%n"
 
 management:
   endpoints:
