@@ -106,7 +106,7 @@ Before running the application ensure you have:
 ### 1. Clone the repository
 
 ```
-git clone https://github.com/<your-username>/billing-collections-service.git
+https://github.com/shafayetHussain/billing-collections-microservice.git
 ```
 
 or download the ZIP file.
