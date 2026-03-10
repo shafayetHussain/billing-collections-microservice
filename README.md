@@ -220,7 +220,7 @@ Example request:
  "amount": 150.00,
  "paymentMethod": "CARD",
  "result": "SUCCESS",
- "idempotencyKey": "payment-test-1"
+ "idempotencyKey": "payment-test-12"
 }
 ```
 
@@ -254,7 +254,7 @@ Example failure request:
  "paymentMethod": "CARD",
  "result": "FAILURE",
  "failureReason": "PROCESSOR_TIMEOUT",
- "idempotencyKey": "payment-test-2"
+ "idempotencyKey": "payment-test-112"
 }
 ```
 
