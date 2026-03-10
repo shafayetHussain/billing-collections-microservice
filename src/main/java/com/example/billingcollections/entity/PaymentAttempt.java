@@ -49,7 +49,7 @@ public class PaymentAttempt {
 	private PaymentResult result;
 	
 	@Enumerated(EnumType.STRING)
-	@Column(name ="failaur_reason", length=50)
+	@Column(name ="failure_reason", length=50)
 	private FailureReason failureReason;
 	
 	@Column(name="idempotency_key", nullable =false, unique=true, length=100)
@@ -63,24 +63,6 @@ public class PaymentAttempt {
 
     @Column(name = "retry_eligible", nullable = false)
     private Boolean retryEligible;
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+		
 
 }
